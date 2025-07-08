@@ -5,7 +5,7 @@ plugins {
 }
 
 group = "net.morimori0317.simpleudpovertcp"
-version = "1.0.0"
+version = "1.0.1"
 
 application {
     mainClass = "net.morimori0317.simpleudpovertcp.MainKt"
@@ -25,7 +25,6 @@ repositories {
 dependencies {
     testImplementation(kotlin("test"))
     implementation("commons-cli:commons-cli:1.9.0")
-    implementation("com.google.guava:guava:33.4.8-jre")
     implementation("it.unimi.dsi:fastutil:8.5.16")
 
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.10.2")

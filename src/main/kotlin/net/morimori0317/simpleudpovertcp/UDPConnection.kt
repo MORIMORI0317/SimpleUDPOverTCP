@@ -85,6 +85,8 @@ class UDPConnection(
         if (destroy.getAndSet(true)) {
             return
         }
+
+        coroutineScope.cancel()
         channel.close()
     }
 
